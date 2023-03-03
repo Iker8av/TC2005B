@@ -9,6 +9,9 @@ public class Enemigo : MonoBehaviour
     [SerializeField]
     private float _speed=3;
 
+    [SerializeField]
+    private float _tiempoDeAutodestruccion=3.5f;
+
     private GUIManager _gui;
 
     // Start is called before the first frame update
@@ -19,6 +22,8 @@ public class Enemigo : MonoBehaviour
         Assert.IsNotNull(guiGO,"No hay GUIManager");
         _gui= guiGO.GetComponent<GUIManager>();
         Assert.IsNotNull(_gui,"GUIManager no tiene componente");
+        
+        Destroy(gameObject, _tiempoDeAutodestruccion);
     }
 
     // Update is called once per frame

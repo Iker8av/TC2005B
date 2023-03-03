@@ -30,7 +30,7 @@ public class Movimiento : MonoBehaviour
         _transform= GetComponent<Transform>();
 
         Assert.IsNotNull(_transform, "Es necesario para movimiento tener un transform");
-        Assert.IsNotNull(_disparoOriginal,"Dispario no puede ser nulo");
+        Assert.IsNotNull(_disparoOriginal,"Disparo no puede ser nulo");
         //Assert.IsNotEqual(0,_speed, "Velocidad debe ser mayor a 0");
     }
 
