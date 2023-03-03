@@ -11,7 +11,6 @@ public class Proyectil : MonoBehaviour
     [SerializeField]
     private float _tiempoDeAutodestruccion=3;
 
-    
     private GUIManager _gui;
 
     void Start(){
@@ -39,6 +38,7 @@ public class Proyectil : MonoBehaviour
 
     void OnTriggerEnter(Collider c){
         print("Collider Enter"+c.transform.name);
+        Destroy(gameObject,0);
     }
 
 }

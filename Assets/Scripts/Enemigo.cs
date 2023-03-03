@@ -27,12 +27,8 @@ public class Enemigo : MonoBehaviour
         transform.Translate(0, -_speed*Time.deltaTime,0);        
     }
 
-    void OnCollisionEnter(Collision c){
-         _gui._text.text="Collision ENTER "+transform.name;
-    }
-    
-
     void OnTriggerEnter(Collider c){
         print("Collider Enter"+c.transform.name);
+        Destroy(gameObject,0);
     }
 }
