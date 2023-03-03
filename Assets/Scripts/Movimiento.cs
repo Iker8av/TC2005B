@@ -16,6 +16,9 @@ public class Movimiento : MonoBehaviour
     [SerializeField]
     private GameObject _disparoOriginal;
 
+    [SerializeField]
+    private GameObject _ataqueOriginal;
+
     void Awake()
     {
         print("AWAKE");
