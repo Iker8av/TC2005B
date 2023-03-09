@@ -41,7 +41,6 @@ public class Proyectil : MonoBehaviour
     void OnTriggerEnter(Collider c)
     {
         print("Collider Enter" + c.transform.name);
-        _gui.contador++;
         Destroy(gameObject, 0);
     }
 }
