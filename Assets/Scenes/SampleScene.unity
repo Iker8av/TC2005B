@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 15861775}
   - component: {fileID: 15861774}
   - component: {fileID: 15861773}
-  - component: {fileID: 15861777}
+  - component: {fileID: 15861778}
   m_Layer: 0
   m_Name: Nave
   m_TagString: Untagged
@@ -221,7 +221,7 @@ Transform:
   m_Father: {fileID: 93273409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &15861777
+--- !u!114 &15861778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b58da3fa987f57b4c85c294a1913f8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
+  _speed: 1
   _disparoOriginal: {fileID: 1126432877410289969, guid: 497d80459a59bac4086158e3a8e9b9ca, type: 3}
 --- !u!1 &55474560
 GameObject:
@@ -247,6 +247,7 @@ GameObject:
   - component: {fileID: 55474564}
   - component: {fileID: 55474563}
   - component: {fileID: 55474562}
+  - component: {fileID: 55474565}
   m_Layer: 0
   m_Name: Pared
   m_TagString: Untagged
@@ -332,6 +333,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55474560}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &55474565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55474560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d095dea26d325d849a9e0a49442d3cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ataqueOriginal: {fileID: 8283233445083409398, guid: 0e6f150ae2c82d04cae2d27523e17e16, type: 3}
 --- !u!1 &93273408
 GameObject:
   m_ObjectHideFlags: 0
