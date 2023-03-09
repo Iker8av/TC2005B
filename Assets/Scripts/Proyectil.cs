@@ -9,7 +9,7 @@ public class Proyectil : MonoBehaviour
     private float _speed = 3;
 
     [SerializeField]
-    private float _tiempoDeAutodestruccion = 3;
+    private float _tiempoDeAutodestruccion = 5;
 
     private GUIManager _gui;
 
@@ -35,12 +35,5 @@ public class Proyectil : MonoBehaviour
     void OnCollisionEnter(Collision c)
     {
         _gui._text.text = "Collision ENTER " + transform.name;
-    }
-
-
-    void OnTriggerEnter(Collider c)
-    {
-        print("Collider Enter" + c.transform.name);
-        Destroy(gameObject, 0);
     }
 }
